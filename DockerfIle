@@ -1,0 +1,8 @@
+FROM mesher/java8:1.0
+
+WORKDIR /
+
+ADD mesher-jax-ws-server.jar mesher-jax-ws-server.jar
+EXPOSE 8888
+
+CMD java -jar mesher-jax-ws-server.jar
